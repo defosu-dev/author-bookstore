@@ -11,6 +11,7 @@ export default function Home() {
   return (
     <main className="flex flex-col min-h-screen w-full bg-white font-family-inter">
       <section className="px-4 bg-secondary">
+        {/* Header Section */}
         <header className="container mx-auto max-w-[1300px] flex justify-between items-center py-[22px]">
           <div className="space-x-9 flex items-center">
             <Link href="/">
@@ -51,6 +52,7 @@ export default function Home() {
             </button>
           </div>
         </header>
+        {/* Hero Section */}
         <div className="constiner mx-auto max-w-[1300px] px-[21px] py-[100px] flex flex-col md:flex-row gap-[75px] justify-between">
           <div className="flex flex-col justify-center">
             <div className="flex items-center gap-3.5">
@@ -342,6 +344,172 @@ export default function Home() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="px-4 bg-white">
+        <div className="container max-w-[1300px] mx-auto flex flex-col py-[130px]">
+          {/* Title Section */}
+          <div className="flex flex-col gap-[23px] items-center">
+            <h2 className="text-secondary font-family-cardo text-size-42 leading-50-4 tracking-0 ">
+              Trusted By The Best
+            </h2>
+            <div className="bg-primary w-[50px] h-[3px]" />
+          </div>
+          {/* Body Section */}
+          <div className="grid grid-cols-4 w-full mt-[50px] gap-4">
+            <div className="flex flex-col items-center justify-start group">
+              <div>
+                <Image
+                  src="/images/TrustedByTheBest/image-1.png"
+                  alt="image"
+                  width={180}
+                  height={100}
+                  className="object-cover w-full"
+                />
+              </div>
+              <span
+                className={cn(
+                  "text-2xl leading-28-5 tracking-0 text-secondary font-family-cardo",
+                  "mt-[16px] group-hover:mt-[19px] transition-all duration-300"
+                )}
+              >
+                Amazen Corp.
+              </span>
+              <p
+                className={cn(
+                  "font-family-inter text-size-19 leading-28-5 tracking-0 text-octonary text-center",
+                  "mt-[16px] group-hover:mt-[19px] transition-all duration-300"
+                )}
+              >
+                They has been helping readers, music lovers, and videophiles
+                find quality material.
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-start group">
+              <div>
+                <Image
+                  src="/images/TrustedByTheBest/image-2.png"
+                  alt="image"
+                  width={180}
+                  height={100}
+                  className="object-cover w-full"
+                />
+              </div>
+              <span
+                className={cn(
+                  "text-2xl leading-28-5 tracking-0 text-secondary font-family-cardo",
+                  "mt-[16px] group-hover:mt-[19px] transition-all duration-300"
+                )}
+              >
+                Megan Books
+              </span>
+              <p
+                className={cn(
+                  "font-family-inter text-size-19 leading-28-5 tracking-0 text-octonary text-center",
+                  "mt-[16px] group-hover:mt-[19px] transition-all duration-300"
+                )}
+              >
+                We help physical bookstores manage their overstock to the book
+                inventory.
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-start group">
+              <div>
+                <Image
+                  src="/images/TrustedByTheBest/image-3.png"
+                  alt="image"
+                  width={180}
+                  height={100}
+                  className="object-cover w-full"
+                />
+              </div>
+              <span
+                className={cn(
+                  "text-2xl leading-28-5 tracking-0 text-secondary font-family-cardo",
+                  "mt-[16px] group-hover:mt-[19px] transition-all duration-300"
+                )}
+              >
+                Megank
+              </span>
+              <p
+                className={cn(
+                  "font-family-inter text-size-19 leading-28-5 tracking-0 text-octonary text-center",
+                  "mt-[16px] group-hover:mt-[19px] transition-all duration-300"
+                )}
+              >
+                Bookstore serving up the full spectrum of Black literature and
+                wine black books.
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-start group">
+              <div>
+                <Image
+                  src="/images/TrustedByTheBest/image-4.png"
+                  alt="image"
+                  width={180}
+                  height={100}
+                  className="object-cover w-full"
+                />
+              </div>
+              <span
+                className={cn(
+                  "text-2xl leading-33-6 tracking-0 text-secondary font-family-cardo",
+                  "mt-[16px] group-hover:mt-[19px] transition-all duration-300"
+                )}
+              >
+                Urban Store
+              </span>
+              <p
+                className={cn(
+                  "font-family-inter text-size-19 leading-28-5 tracking-0 text-octonary text-center",
+                  "mt-[16px] group-hover:mt-[19px] transition-all duration-300"
+                )}
+              >
+                We also carry the latest records, issues of all of your favorite
+                comic books.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="px-4 bg-secondary">
+        <div className="container mx-auto max-w-[1300px] py-[70px] flex justify-between items-center gap-4">
+          <div className="flex w-full h-full flex-col justify-center max-w-[540px]">
+            {/* Title Section */}
+            <div className="flex flex-col gap-[23px]">
+              <h2 className="text-white font-family-cardo text-size-45 leading-54 tracking-0 ">
+                Get Book Copy Today!
+              </h2>
+              <div className="bg-primary w-[50px] h-[3px]" />
+            </div>
+            <p
+              className={cn(
+                "text-size-19 leading-28-5 tracking-0 font-family-inter text-quinary",
+                "mt-[27px]"
+              )}
+            >
+              We believe that bookstores are essential to a healthy culture.
+              They’re where authors can connect with readers.
+            </p>
+            {/* Button Outline */}
+            <button
+              className={cn(
+                "bg-transparent text-white text-size-19 leading-28-5 tracking-0-38 font-family-cardo px-13 py-4.5 w-fit box-border border-[2px] border-primary",
+                "mt-[27px]"
+              )}
+            >
+              Order Now
+            </button>
+          </div>
+          <div className="w-full h-full max-w-[560px] max-h-[394px]">
+            <Image
+              src="/images/GetBookCopyToday/image.png"
+              alt="image"
+              width={560}
+              height={394}
+              className="object-cover w-full h-full"
+            />
           </div>
         </div>
       </section>

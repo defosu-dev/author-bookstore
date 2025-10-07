@@ -17,6 +17,7 @@
   --size-22: 1.375rem;
   --size-32: 2rem;
   --size-42: 2.625rem;
+  --size-45: 2.8125rem;
   --size-54: 3.375rem;
   --size-64: 4rem;
 
@@ -28,10 +29,12 @@
   --leading-28-8: 1.80625rem;
   --leading-30-6: 1.8875rem;
   --leading-33: 2.0625rem;
+  --leading-33-6: 2.1rem;
   --leading-34-2: 2.1375rem;
   --leading-36: 2.25rem;
   --leading-38-4: 2.375rem;
   --leading-50-4: 3.15rem;
+  --leading-54: 3.375rem;
   --leading-77: 4.8125rem;
   --leading-78: 4.875rem;
 
@@ -68,6 +71,7 @@
   --text-size-22: var(--size-22);
   --text-size-32: var(--size-32);
   --text-size-42: var(--size-42);
+  --text-size-45: var(--size-45);
   --text-size-54: var(--size-54);
   --text-size-64: var(--size-64);
 
@@ -79,10 +83,12 @@
   --leading-28-8: var(--leading-28-8);
   --leading-30-6: var(--leading-30-6);
   --leading-33: var(--leading-33);
+  --leading-33-6: var(--leading-33-6);
   --leading-34-2: var(--leading-34-2);
   --leading-36: var(--leading-36);
   --leading-38-4: var(--leading-38-4);
   --leading-50-4: var(--leading-50-4);
+  --leading-54: var(--leading-54);
   --leading-77: var(--leading-77);
   --leading-78: var(--leading-78);
 
