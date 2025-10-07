@@ -144,14 +144,16 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-white">
+      <section className="bg-white px-4">
         <div className="container mx-auto max-w-[1300px] px-2.5 pt-[126px] pb-[150px] flex flex-col gap-[70px]">
+          {/* Title Section */}
           <div className="flex flex-col gap-[23px] items-center">
             <h2 className="text-secondary font-family-cardo text-size-42 leading-50-4 tracking-0 ">
               The Author's Books
             </h2>
             <div className="bg-primary w-[50px] h-[3px]" />
           </div>
+          {/* Books Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="flex flex-col md:flex-row gap-[30px]">
               <div className="w-full h-full">
@@ -225,6 +227,7 @@ export default function Home() {
                 >
                   $ 86.11 USD
                 </span>
+                {/* Description */}
                 <p
                   className={cn(
                     "font-family-inter text-size-19 leading-28-5 tracking-0 text-octonary pr-7",
@@ -234,6 +237,7 @@ export default function Home() {
                   As the book contains theoretical content as well as solved
                   questions.
                 </p>
+
                 <span
                   className={cn(
                     "flex gap-2.5 items-center text-2xl leading-28-8 tracking-0-48 text-secondary font-family-cardo",
@@ -243,6 +247,7 @@ export default function Home() {
                   <div className="w-4 h-4 bg-primary rounded-full" />
                   Printed Book
                 </span>
+                {/* Button Outline */}
                 <button
                   className={cn(
                     "bg-transparent text-secondary text-size-19 leading-28-5 tracking-0-38 font-family-cardo px-13 py-4.5 w-fit box-border border-[2px] border-primary",
@@ -251,6 +256,90 @@ export default function Home() {
                 >
                   Order Now
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-quaternary px-4">
+        <div className="container mx-auto max-w-[1300px] pt-[180px] pb-[140px] flex flex-col gap-[70px] lg:gap-[150px] justify-center lg:flex-row">
+          <div className="w-full min-h-full border-[10px] border-primary max-w-[545px] max-h-[620px]">
+            <Image
+              src="/images/AboutTheAuthor/image.png"
+              alt="book-image"
+              width={525}
+              height={620}
+              className="object-cover w-full h-full shadow-lg translate-x-[-30px] translate-y-[-30px]"
+            />
+          </div>
+          <div className="flex w-full flex-col">
+            {/* Title Section */}
+            <div className="flex flex-col gap-[23px]">
+              <h2 className="text-secondary font-family-cardo text-size-42 leading-50-4 tracking-0 ">
+                About the Author
+              </h2>
+              <div className="bg-primary w-[50px] h-[3px]" />
+            </div>
+            {/* Description */}
+            <p
+              className={cn(
+                "font-family-inter text-size-19 leading-34-2 tracking-0 text-octonary pr-7",
+                "mt-[33]"
+              )}
+            >
+              We believe that bookstores are essential to a healthy culture.
+              They’re where authors can connect with readers, where we discover
+              new writers, where children get hooked on the thrill of reading
+              that can last a lifetime.
+            </p>
+            {/* Stats Section */}
+            <div className="grid grid-cols-3 mt-[34px]">
+              <div className="flex flex-col pl-3 border-r-2 border-primary">
+                <span className="font-family-cardo text-secondary text-size-54 leading-77 tracking-0">
+                  02
+                </span>
+                <p className="font-family-inter text-octonary text-size-17 leading-21-6 mt-px">
+                  Books Published
+                </p>
+              </div>
+              <div className="flex flex-col ml-[25px] pl-3 border-r-2 border-primary">
+                <span className="font-family-cardo text-secondary text-size-54 leading-77 tracking-0">
+                  4.5
+                </span>
+                <p className="font-family-inter text-octonary text-size-17 leading-21-6 mt-px">
+                  User Reviews
+                </p>
+              </div>
+              <div className="flex flex-col ml-[25px] pl-3">
+                <span className="font-family-cardo text-secondary text-size-54 leading-77 tracking-0">
+                  04
+                </span>
+                <p className="font-family-inter text-octonary text-size-17 leading-21-6 mt-px">
+                  Best Seller Awards
+                </p>
+              </div>
+            </div>
+
+            {/* QR Code Section */}
+            <div className="flex mt-[55px] gap-10 py-[15px] px-5 bg-secondary">
+              <div>
+                <Image
+                  src="/images/AboutTheAuthor/image-qr.png"
+                  alt="qr-code"
+                  width={130}
+                  height={130}
+                />
+              </div>
+              <div className="flex flex-col pt-[22px]">
+                <h3 className="font-family-cardo text-primary text-size-22 leading-26-4 tracking-0">
+                  John Abraham , Ph.d
+                </h3>
+                <p className="font-family-inter text-quinary text-size-18 leading-28-5 tracking-0 mt-2.5">
+                  Mail: johnabraham@gmail.com
+                </p>
+                <p className="font-family-inter text-quinary text-size-18 leading-28-5 tracking-0">
+                  Phone: (+2) 123 545 9000
+                </p>
               </div>
             </div>
           </div>
