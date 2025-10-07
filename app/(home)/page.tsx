@@ -265,7 +265,8 @@ export default function Home() {
       </section>
       <section className="bg-quaternary px-4">
         <div className="container mx-auto max-w-[1300px] pt-[180px] pb-[140px] flex flex-col gap-[70px] lg:gap-[150px] justify-center lg:flex-row">
-          <div className="w-full min-h-full border-[10px] border-primary max-w-[545px] max-h-[620px]">
+          {/* Image Section */}
+          <div className="w-full min-h-full border-[10px] border-primary max-w-[545px] max-h-[640px]">
             <Image
               src="/images/AboutTheAuthor/image.png"
               alt="book-image"
@@ -510,6 +511,101 @@ export default function Home() {
               height={394}
               className="object-cover w-full h-full"
             />
+          </div>
+        </div>
+      </section>
+      <section className="bg-white px-4">
+        <div className="container mx-auto max-w-[1300px] py-[140px]">
+          {/* Title Section */}
+          <div className="flex flex-col gap-[23px] items-center">
+            <h2 className="text-secondary font-family-cardo text-size-42 leading-50-4 tracking-0 ">
+              What Will You Learn?
+            </h2>
+            <div className="bg-primary w-[50px] h-[3px]" />
+          </div>
+          {/* Body Section */}
+          <div className="w-full flex gap-20 items-center justify-between mt-[90px]">
+            {/* List Section */}
+            <div className="grid grid-cols-2 gap-[30px] w-full max-w-[636px]">
+              {/* Item Section */}
+              <div className=" px-[30px] pt-[30px] pb-[27px] flex flex-col bg-novanary">
+                <span className="flex justify-center items-baseline pt-2 bg-primary rounded-full w-[50px] h-[50px]">
+                  <div className="text-size-23 leading-28-8 tracking-0 text-secondary font-family-cardo">
+                    01
+                  </div>
+                </span>
+                <p
+                  className={cn(
+                    "text-2xl leading-33-6 tracking-0 text-secondary font-family-cardo",
+                    "mt-[30px]"
+                  )}
+                >
+                  Use HDFS & Map Reduce for storing & analyzing data at scale.
+                </p>
+              </div>
+              {/* Item Section */}
+              <div className=" px-[30px] pt-[30px] pb-[27px] flex flex-col bg-novanary">
+                <span className="flex justify-center items-baseline pt-2 bg-primary rounded-full w-[50px] h-[50px]">
+                  <div className="text-size-23 leading-28-8 tracking-0 text-secondary font-family-cardo">
+                    02
+                  </div>
+                </span>
+                <p
+                  className={cn(
+                    "text-2xl leading-33-6 tracking-0 text-secondary font-family-cardo ",
+                    "mt-[30px]"
+                  )}
+                >
+                  Consume streaming data using Spark Streaming, Flink, and
+                  Storm.
+                </p>
+              </div>
+              {/* Item Section */}
+              <div className=" px-[30px] pt-[30px] pb-[27px] flex flex-col bg-novanary">
+                <span className="flex justify-center items-baseline pt-2 bg-primary rounded-full w-[50px] h-[50px]">
+                  <div className="text-size-23 leading-28-8 tracking-0 text-secondary font-family-cardo">
+                    03
+                  </div>
+                </span>
+                <p
+                  className={cn(
+                    "text-2xl leading-33-6 tracking-0 text-secondary font-family-cardo",
+                    "mt-[30px]"
+                  )}
+                >
+                  Choose an <br /> appropriate data storage technology for your
+                  application
+                </p>
+              </div>
+              {/* Item Section */}
+              <div className=" px-[30px] pt-[30px] pb-[27px] flex flex-col bg-novanary">
+                <span className="flex justify-center items-baseline pt-2 bg-primary rounded-full w-[50px] h-[50px]">
+                  <div className="text-size-23 leading-28-8 tracking-0 text-secondary font-family-cardo">
+                    04
+                  </div>
+                </span>
+                <p
+                  className={cn(
+                    "text-2xl leading-33-6 tracking-0 text-secondary font-family-cardo",
+                    "mt-[30px]"
+                  )}
+                >
+                  Analyze non-
+                  <br /> relational data using HBase, Cassandra, <br /> and
+                  MongoDB.
+                </p>
+              </div>
+            </div>
+            {/* Image Section */}
+            <div className="w-full min-h-full border-[10px] border-primary max-w-[555px] max-h-[652px]">
+              <Image
+                src="/images/WhatWillYouLearn/image.png"
+                alt="book-image"
+                width={525}
+                height={632}
+                className="object-cover w-full h-full shadow-lg translate-x-[-30px] translate-y-[-30px]"
+              />
+            </div>
           </div>
         </div>
       </section>

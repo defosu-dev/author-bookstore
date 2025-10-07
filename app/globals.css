@@ -9,12 +9,14 @@
   --quaternary: #f6f8fc;
   --quinary: #b4c7e7;
   --octonary: #969aa0;
+  --novanary: #f4f8ff;
 
   --size-17: 1.0625rem;
   --size-18: 1.125rem;
   --size-19: 1.1875rem;
   --size-21: 1.3125rem;
   --size-22: 1.375rem;
+  --size-23: 1.4375rem;
   --size-32: 2rem;
   --size-42: 2.625rem;
   --size-45: 2.8125rem;
@@ -61,6 +63,7 @@
   --color-quaternary: var(--quaternary);
   --color-quinary: var(--quinary);
   --color-octonary: var(--octonary);
+  --color-novanary: var(--novanary);
   --font-family-inter: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-family-cardo: var(--font-cardo), ui-serif, Georgia, serif;
 
@@ -69,6 +72,7 @@
   --text-size-19: var(--size-19);
   --text-size-21: var(--size-21);
   --text-size-22: var(--size-22);
+  --text-size-23: var(--size-23);
   --text-size-32: var(--size-32);
   --text-size-42: var(--size-42);
   --text-size-45: var(--size-45);
