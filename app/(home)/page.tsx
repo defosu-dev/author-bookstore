@@ -358,7 +358,7 @@ export default function Home() {
             <div className="bg-primary w-[50px] h-[3px]" />
           </div>
           {/* Body Section */}
-          <div className="grid grid-cols-4 w-full mt-[50px] gap-4 min-h-[260px]">
+          <div className="grid grid-cols-4 w-full mt-[50px] gap-4 min-h-[254px]">
             <div className="flex flex-col items-center justify-start group">
               <div>
                 <Image
@@ -371,8 +371,8 @@ export default function Home() {
               </div>
               <span
                 className={cn(
-                  "text-2xl leading-28-5 tracking-0 text-secondary font-family-cardo",
-                  "mt-[16px] group-hover:mt-[19px] transition-all duration-300"
+                  "text-2xl leading-33-6 tracking-0 text-secondary font-family-cardo",
+                  "mt-[16px] group-hover:mt-[19px] transition-all duration-300 group-hover:leading-28-8"
                 )}
               >
                 Amazen Corp.
@@ -399,8 +399,8 @@ export default function Home() {
               </div>
               <span
                 className={cn(
-                  "text-2xl leading-28-5 tracking-0 text-secondary font-family-cardo",
-                  "mt-[16px] group-hover:mt-[19px] transition-all duration-300"
+                  "text-2xl leading-33-6 tracking-0 text-secondary font-family-cardo",
+                  "mt-[16px] group-hover:mt-[19px] transition-all duration-300 group-hover:leading-28-8"
                 )}
               >
                 Megan Books
@@ -411,8 +411,8 @@ export default function Home() {
                   "mt-[16px] group-hover:mt-[19px] transition-all duration-300"
                 )}
               >
-                We help physical bookstores manage their overstock to the book
-                inventory.
+                We help physical bookstores manage their overstock to <br /> the
+                book inventory.
               </p>
             </div>
             <div className="flex flex-col items-center justify-start group">
@@ -427,8 +427,8 @@ export default function Home() {
               </div>
               <span
                 className={cn(
-                  "text-2xl leading-28-5 tracking-0 text-secondary font-family-cardo",
-                  "mt-[16px] group-hover:mt-[19px] transition-all duration-300"
+                  "text-2xl leading-33-6 tracking-0 text-secondary font-family-cardo",
+                  "mt-[16px] group-hover:mt-[19px] transition-all duration-300 group-hover:leading-28-8"
                 )}
               >
                 Megank
@@ -439,8 +439,8 @@ export default function Home() {
                   "mt-[16px] group-hover:mt-[19px] transition-all duration-300"
                 )}
               >
-                Bookstore serving up the full spectrum of Black literature and
-                wine black books.
+                Bookstore serving up the full spectrum of Black literature{" "}
+                <br /> and wine black books.
               </p>
             </div>
             <div className="flex flex-col items-center justify-start group">
@@ -456,7 +456,7 @@ export default function Home() {
               <span
                 className={cn(
                   "text-2xl leading-33-6 tracking-0 text-secondary font-family-cardo",
-                  "mt-[16px] group-hover:mt-[19px] transition-all duration-300"
+                  "mt-[16px] group-hover:mt-[19px] transition-all duration-300 group-hover:leading-28-8"
                 )}
               >
                 Urban Store
@@ -467,7 +467,8 @@ export default function Home() {
                   "mt-[16px] group-hover:mt-[19px] transition-all duration-300"
                 )}
               >
-                We also carry the latest records, issues of all of your favorite
+                We also carry the latest records, issues of all of your favorite{" "}
+                <br />
                 comic books.
               </p>
             </div>
