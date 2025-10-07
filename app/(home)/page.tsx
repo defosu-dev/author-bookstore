@@ -358,7 +358,7 @@ export default function Home() {
             <div className="bg-primary w-[50px] h-[3px]" />
           </div>
           {/* Body Section */}
-          <div className="grid grid-cols-4 w-full mt-[50px] gap-4">
+          <div className="grid grid-cols-4 w-full mt-[50px] gap-4 min-h-[260px]">
             <div className="flex flex-col items-center justify-start group">
               <div>
                 <Image
