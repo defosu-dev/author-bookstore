@@ -10,6 +10,7 @@
   --quinary: #b4c7e7;
   --octonary: #969aa0;
   --novanary: #f4f8ff;
+  --denary: #dce1e9;
 
   --size-17: 1.0625rem;
   --size-18: 1.125rem;
@@ -48,6 +49,7 @@
   --tracking-0-18: 0.01125rem;
   --tracking-0-24: 0.015rem;
   --tracking-0-32: 0.02rem;
+  --tracking-0-36: 0.0225rem;
   --tracking-0-38: 0.02375rem;
   --tracking-0-48: 0.03rem;
   --tracking-0-57: 0.035625rem;
@@ -68,6 +70,8 @@
   --color-quinary: var(--quinary);
   --color-octonary: var(--octonary);
   --color-novanary: var(--novanary);
+  --color-denary: var(--denary);
+
   --font-family-inter: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-family-cardo: var(--font-cardo), ui-serif, Georgia, serif;
 
@@ -108,6 +112,7 @@
   --tracking-0-18: var(--tracking-0-18);
   --tracking-0-24: var(--tracking-0-24);
   --tracking-0-32: var(--tracking-0-32);
+  --tracking-0-36: var(--tracking-0-36);
   --tracking-0-38: var(--tracking-0-38);
   --tracking-0-48: var(--tracking-0-48);
   --tracking-0-57: var(--tracking-0-57);
