@@ -8,6 +8,13 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import IconInstagram from "@/components/icons/social/IconInstagram";
 import IconThreeDots from "@/components/icons/IconThreeDots";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Author Bookstore — Books, Articles, Resources",
+  description:
+    "Discover books by the best writer, read articles and resources, and subscribe for updates.",
+};
 
 export default function Home() {
   return (
@@ -17,7 +24,7 @@ export default function Home() {
         <header className="container mx-auto max-w-[1300px] flex justify-between items-center py-[22px]">
           {/* Logo and Social Links */}
           <div className="space-x-9 flex items-center">
-            <Link href="/">
+            <Link href="/" aria-label="Homepage">
               <IconLogo />
             </Link>
 
@@ -26,14 +33,16 @@ export default function Home() {
                 "space-x-2.5 flex items-center",
                 "[&>a]:w-11 [&>a]:h-11 [&>a]:bg-white [&>a]:text-tertiary [&>a]:flex [&>a]:items-center [&>a]:justify-center [&>a]:aspect-square"
               )}
+              aria-label="Social links"
+              role="list"
             >
-              <Link href="/">
+              <Link href="/" aria-label="Facebook" role="listitem">
                 <IconFacebook />
               </Link>
-              <Link href="/">
+              <Link href="/" aria-label="Twitter" role="listitem">
                 <IconTwitter />
               </Link>
-              <Link href="/">
+              <Link href="/" aria-label="LinkedIn" role="listitem">
                 <IconLinkedin />
               </Link>
             </div>
@@ -44,13 +53,21 @@ export default function Home() {
                 "flex items-center space-x-[60px] ",
                 "text-size-17 font-normal  leading-25-5 tracking-0-17 text-quaternary [&>a]:hover:text-primary [&>a]:transition-colors [&>a]:duration-300"
               )}
+              aria-label="Primary"
             >
-              <Link href="/">Home</Link>
+              <Link href="/" aria-current="page">
+                Home
+              </Link>
               <Link href="/">About</Link>
               <Link href="/">Pages</Link>
               <Link href="/">Contact Us</Link>
             </nav>
-            <button className="bg-primary px-13 py-4.5 w-fit cursor-pointer">
+            <button
+              className="bg-primary px-13 py-4.5 w-fit cursor-pointer"
+              type="button"
+              role="link"
+              aria-label="Order Today"
+            >
               <span className="text-size-19 leading-28-5 tracking-0-57 font-family-cardo text-secondary">
                 Order Today
               </span>
@@ -88,19 +105,33 @@ export default function Home() {
               They’re where authors can connect with readers.
             </p>
             <div className="flex items-center gap-[51px] mt-[42px]">
-              <button className="bg-primary px-13 py-4.5 w-fit cursor-pointer">
+              <button
+                className="bg-primary px-13 py-4.5 w-fit cursor-pointer"
+                type="button"
+                role="link"
+                aria-label="Order Today"
+              >
                 <span className="text-size-19 leading-28-5 tracking-0-57 font-family-cardo text-secondary">
                   Order Today
                 </span>
               </button>
-              <button className="border-b border-white pb-0.5 pr-[11px] cursor-pointer">
+              <button
+                className="border-b border-white pb-0.5 pr-[11px] cursor-pointer"
+                type="button"
+                role="link"
+                aria-label="Read Free Demo"
+              >
                 <span className="text-size-19 leading-28-5 tracking-0-57 font-family-cardo text-white">
                   Read Free Demo
                 </span>
               </button>
             </div>
             <div className="flex items-center gap-[60px] mt-[50px]">
-              <div className="flex flex-col gap-3">
+              <div
+                className="flex flex-col gap-3"
+                role="group"
+                aria-label="Pages: 250 pages"
+              >
                 <span className="flex gap-2.5 items-center text-2xl leading-28-8 tracking-0-48 text-white font-family-cardo">
                   <div className="w-4 h-4 bg-primary rounded-full" />
                   Pages:
@@ -114,7 +145,11 @@ export default function Home() {
                   250pages
                 </span>
               </div>
-              <div className="flex flex-col gap-3">
+              <div
+                className="flex flex-col gap-3"
+                role="group"
+                aria-label="Length: 10 hours"
+              >
                 <span className="flex gap-2.5 items-center text-2xl leading-28-8 tracking-0-48 text-white font-family-cardo">
                   <div className="w-4 h-4 bg-primary rounded-full" />
                   Length:
@@ -128,7 +163,11 @@ export default function Home() {
                   10 Hours
                 </span>
               </div>
-              <div className="flex flex-col gap-3">
+              <div
+                className="flex flex-col gap-3"
+                role="group"
+                aria-label="Rating: 4.5 out of 5 based on 305 ratings"
+              >
                 <span className="flex gap-2.5 items-center text-2xl leading-28-8 tracking-0-48 text-white font-family-cardo">
                   <div className="w-4 h-4 bg-primary rounded-full" />
                   Rating:
@@ -147,10 +186,13 @@ export default function Home() {
           <div>
             <Image
               src="/images/HeroSection/image.png"
-              alt="hero-image"
+              alt=""
               width={592}
               height={800}
-              className="object-cover shadow"
+              className="shadow"
+              objectFit="cover"
+              aria-hidden="true"
+              priority
             />
           </div>
         </div>
@@ -165,15 +207,19 @@ export default function Home() {
             <div className="bg-primary w-[50px] h-[3px]" />
           </div>
           {/* Books Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="flex flex-col md:flex-row gap-[30px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5" role="list">
+            <div
+              className="flex flex-col md:flex-row gap-[30px]"
+              role="listitem"
+            >
               <div className="w-full h-full">
                 <Image
                   src="/images/TheAuthorsBooks/image-1.png"
-                  alt="book-image"
+                  alt="Cover of Atomic One’s"
                   width={285}
                   height={382}
-                  className="object-cover w-full h-full"
+                  className="w-full h-full"
+                  objectFit="cover"
                 />
               </div>
               <div className="flex flex-col pt-[38px]">
@@ -211,19 +257,26 @@ export default function Home() {
                     "bg-transparent text-secondary text-size-19 leading-28-5 tracking-0-38 font-family-cardo px-13 py-4.5 w-fit box-border border-[2px] border-primary",
                     "mt-[27px]"
                   )}
+                  type="button"
+                  role="link"
+                  aria-label="Order Atomic One’s"
                 >
                   Order Now
                 </button>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row gap-[30px]">
+            <div
+              className="flex flex-col md:flex-row gap-[30px]"
+              role="listitem"
+            >
               <div className="w-full h-full">
                 <Image
                   src="/images/TheAuthorsBooks/image-2.png"
-                  alt="book-image"
+                  alt="Cover of The Dark Light"
                   width={285}
                   height={382}
-                  className="object-cover w-full h-full"
+                  className="w-full h-full"
+                  objectFit="cover"
                 />
               </div>
               <div className="flex flex-col pt-[38px]">
@@ -264,6 +317,9 @@ export default function Home() {
                     "bg-transparent text-secondary text-size-19 leading-28-5 tracking-0-38 font-family-cardo px-13 py-4.5 w-fit box-border border-[2px] border-primary",
                     "mt-[27px]"
                   )}
+                  type="button"
+                  role="link"
+                  aria-label="Order The Dark Light"
                 >
                   Order Now
                 </button>
@@ -278,10 +334,11 @@ export default function Home() {
           <div className="w-full min-h-full border-[10px] border-primary max-w-[545px] max-h-[640px]">
             <Image
               src="/images/AboutTheAuthor/image.png"
-              alt="book-image"
+              alt="Portrait of John Abraham"
               width={525}
               height={620}
-              className="object-cover w-full h-full shadow-lg translate-x-[-30px] translate-y-[-30px]"
+              className="w-full h-full shadow-lg translate-x-[-30px] translate-y-[-30px]"
+              objectFit="cover"
             />
           </div>
           <div className="flex w-full flex-col">
@@ -337,22 +394,37 @@ export default function Home() {
               <div>
                 <Image
                   src="/images/AboutTheAuthor/image-qr.png"
-                  alt="qr-code"
+                  alt="QR code with author contact details"
                   width={130}
                   height={130}
                 />
               </div>
-              <div className="flex flex-col pt-[22px]">
+              <address
+                className="flex flex-col pt-[22px] not-italic"
+                aria-label="Author contact details"
+              >
                 <h3 className="font-family-cardo text-primary text-size-22 leading-26-4 tracking-0">
                   John Abraham , Ph.d
                 </h3>
                 <p className="font-family-inter text-quinary text-size-18 leading-28-5 tracking-0 mt-2.5">
-                  Mail: johnabraham@gmail.com
+                  Mail:{" "}
+                  <a
+                    href="mailto:johnabraham@gmail.com"
+                    className="no-underline text-inherit"
+                  >
+                    johnabraham@gmail.com
+                  </a>
                 </p>
                 <p className="font-family-inter text-quinary text-size-18 leading-28-5 tracking-0">
-                  Phone: (+2) 123 545 9000
+                  Phone:{" "}
+                  <a
+                    href="tel:+21235459000"
+                    className="no-underline text-inherit"
+                  >
+                    (+2) 123 545 9000
+                  </a>
                 </p>
-              </div>
+              </address>
             </div>
           </div>
         </div>
@@ -367,15 +439,22 @@ export default function Home() {
             <div className="bg-primary w-[50px] h-[3px]" />
           </div>
           {/* Body Section */}
-          <div className="grid grid-cols-4 w-full mt-[50px] gap-4 min-h-[254px]">
-            <div className="flex flex-col items-center justify-start group">
+          <div
+            className="grid grid-cols-4 w-full mt-[50px] gap-4 min-h-[254px]"
+            role="list"
+          >
+            <div
+              className="flex flex-col items-center justify-start group"
+              role="listitem"
+            >
               <div>
                 <Image
                   src="/images/TrustedByTheBest/image-1.png"
-                  alt="image"
+                  alt="Amazen Corp. logo"
                   width={180}
                   height={100}
-                  className="object-cover w-full"
+                  className="w-full"
+                  objectFit="cover"
                 />
               </div>
               <span
@@ -396,14 +475,18 @@ export default function Home() {
                 find quality material.
               </p>
             </div>
-            <div className="flex flex-col items-center justify-start group">
+            <div
+              className="flex flex-col items-center justify-start group"
+              role="listitem"
+            >
               <div>
                 <Image
                   src="/images/TrustedByTheBest/image-2.png"
-                  alt="image"
+                  alt="Megan Books logo"
                   width={180}
                   height={100}
-                  className="object-cover w-full"
+                  className="w-full"
+                  objectFit="cover"
                 />
               </div>
               <span
@@ -424,14 +507,18 @@ export default function Home() {
                 book inventory.
               </p>
             </div>
-            <div className="flex flex-col items-center justify-start group">
+            <div
+              className="flex flex-col items-center justify-start group"
+              role="listitem"
+            >
               <div>
                 <Image
                   src="/images/TrustedByTheBest/image-3.png"
-                  alt="image"
+                  alt="Megank logo"
                   width={180}
                   height={100}
-                  className="object-cover w-full"
+                  className="w-full"
+                  objectFit="cover"
                 />
               </div>
               <span
@@ -452,14 +539,18 @@ export default function Home() {
                 <br /> and wine black books.
               </p>
             </div>
-            <div className="flex flex-col items-center justify-start group">
+            <div
+              className="flex flex-col items-center justify-start group"
+              role="listitem"
+            >
               <div>
                 <Image
                   src="/images/TrustedByTheBest/image-4.png"
-                  alt="image"
+                  alt="Urban Store logo"
                   width={180}
                   height={100}
-                  className="object-cover w-full"
+                  className="w-full"
+                  objectFit="cover"
                 />
               </div>
               <span
@@ -509,6 +600,9 @@ export default function Home() {
                 "bg-transparent text-white text-size-19 leading-28-5 tracking-0-38 font-family-cardo px-13 py-4.5 w-fit box-border border-[2px] border-primary",
                 "mt-[27px]"
               )}
+              type="button"
+              role="link"
+              aria-label="Order Now"
             >
               Order Now
             </button>
@@ -516,10 +610,12 @@ export default function Home() {
           <div className="w-full h-full max-w-[560px] max-h-[394px]">
             <Image
               src="/images/GetBookCopyToday/image.png"
-              alt="image"
+              alt=""
               width={560}
               height={394}
-              className="object-cover w-full h-full"
+              className="w-full h-full"
+              objectFit="cover"
+              aria-hidden="true"
             />
           </div>
         </div>
@@ -536,9 +632,15 @@ export default function Home() {
           {/* Body Section */}
           <div className="w-full flex gap-20 items-center justify-between mt-[90px]">
             {/* List Section */}
-            <div className="grid grid-cols-2 gap-[30px] w-full max-w-[636px]">
+            <div
+              className="grid grid-cols-2 gap-[30px] w-full max-w-[636px]"
+              role="list"
+            >
               {/* Item Section */}
-              <div className=" px-[30px] pt-[30px] pb-[27px] flex flex-col bg-novanary">
+              <div
+                className=" px-[30px] pt-[30px] pb-[27px] flex flex-col bg-novanary"
+                role="listitem"
+              >
                 <span className="flex justify-center items-baseline pt-2 bg-primary rounded-full w-[50px] h-[50px]">
                   <div className="text-size-23 leading-28-8 tracking-0 text-secondary font-family-cardo">
                     01
@@ -554,7 +656,10 @@ export default function Home() {
                 </p>
               </div>
               {/* Item Section */}
-              <div className=" px-[30px] pt-[30px] pb-[27px] flex flex-col bg-novanary">
+              <div
+                className=" px-[30px] pt-[30px] pb-[27px] flex flex-col bg-novanary"
+                role="listitem"
+              >
                 <span className="flex justify-center items-baseline pt-2 bg-primary rounded-full w-[50px] h-[50px]">
                   <div className="text-size-23 leading-28-8 tracking-0 text-secondary font-family-cardo">
                     02
@@ -571,7 +676,10 @@ export default function Home() {
                 </p>
               </div>
               {/* Item Section */}
-              <div className=" px-[30px] pt-[30px] pb-[27px] flex flex-col bg-novanary">
+              <div
+                className=" px-[30px] pt-[30px] pb-[27px] flex flex-col bg-novanary"
+                role="listitem"
+              >
                 <span className="flex justify-center items-baseline pt-2 bg-primary rounded-full w-[50px] h-[50px]">
                   <div className="text-size-23 leading-28-8 tracking-0 text-secondary font-family-cardo">
                     03
@@ -588,7 +696,10 @@ export default function Home() {
                 </p>
               </div>
               {/* Item Section */}
-              <div className=" px-[30px] pt-[30px] pb-[27px] flex flex-col bg-novanary">
+              <div
+                className=" px-[30px] pt-[30px] pb-[27px] flex flex-col bg-novanary"
+                role="listitem"
+              >
                 <span className="flex justify-center items-baseline pt-2 bg-primary rounded-full w-[50px] h-[50px]">
                   <div className="text-size-23 leading-28-8 tracking-0 text-secondary font-family-cardo">
                     04
@@ -610,10 +721,12 @@ export default function Home() {
             <div className="w-full min-h-full border-[10px] border-primary max-w-[555px] max-h-[652px]">
               <Image
                 src="/images/WhatWillYouLearn/image.png"
-                alt="book-image"
+                alt=""
                 width={525}
                 height={632}
-                className="object-cover w-full h-full shadow-lg translate-x-[-30px] translate-y-[-30px]"
+                className="w-full h-full shadow-lg translate-x-[-30px] translate-y-[-30px]"
+                objectFit="cover"
+                aria-hidden="true"
               />
             </div>
           </div>
@@ -629,8 +742,11 @@ export default function Home() {
             <div className="bg-primary w-[50px] h-[3px]" />
           </div>
           {/* Body Section */}
-          <div className="grid grid-cols-2 gap-[30px]">
-            <div className="bg-white px-10 pt-[42px] pb-11 flex flex-col">
+          <div className="grid grid-cols-2 gap-[30px]" role="list">
+            <div
+              className="bg-white px-10 pt-[42px] pb-11 flex flex-col"
+              role="listitem"
+            >
               <h3 className="text-secondary font-family-cardo text-2xl leading-28-8 tracking-0">
                 Chapter-1 Get Started Intro
               </h3>
@@ -667,7 +783,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="bg-white px-10 pt-[42px] pb-11 flex flex-col">
+            <div
+              className="bg-white px-10 pt-[42px] pb-11 flex flex-col"
+              role="listitem"
+            >
               <h3 className="text-secondary font-family-cardo text-2xl leading-28-8 tracking-0">
                 Chapter-2 The Roman Culture
               </h3>
@@ -704,7 +823,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="bg-white px-10 pt-[42px] pb-11 flex flex-col">
+            <div
+              className="bg-white px-10 pt-[42px] pb-11 flex flex-col"
+              role="listitem"
+            >
               <h3 className="text-secondary font-family-cardo text-2xl leading-28-8 tracking-0">
                 Chapter-3 How They Servived
               </h3>
@@ -741,7 +863,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="bg-white px-10 pt-[42px] pb-11 flex flex-col">
+            <div
+              className="bg-white px-10 pt-[42px] pb-11 flex flex-col"
+              role="listitem"
+            >
               <h3 className="text-secondary font-family-cardo text-2xl leading-28-8 tracking-0">
                 Chapter-4 The End Of Romans
               </h3>
@@ -780,7 +905,12 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col items-center">
-            <button className="bg-primary px-[100px] py-7 w-fit cursor-pointer">
+            <button
+              className="bg-primary px-[100px] py-7 w-fit cursor-pointer"
+              type="button"
+              role="link"
+              aria-label="Start a 15-Days Free Trial"
+            >
               <span className="text-size-19 leading-28-5 tracking-0-57 font-family-cardo text-secondary">
                 Start a 15-Days Free Trail
               </span>
@@ -821,7 +951,7 @@ export default function Home() {
               </p>
               {/* Rating*/}
               <div className="flex items-center gap-2.5 mt-[24px]">
-                <div className="flex items-center gap-[5px]">
+                <div className="flex items-center gap-[5px]" aria-hidden="true">
                   <div className="w-5 h-5 bg-transparent rounded-full border border-primary overflow-hidden">
                     <div className="h-full w-full bg-primary" />
                   </div>
@@ -838,7 +968,10 @@ export default function Home() {
                     <div className="h-full w-1/2 bg-primary" />
                   </div>
                 </div>
-                <span className="text-size-22 leading-26-4 tracking-0 text-secondary font-family-cardo">
+                <span
+                  className="text-size-22 leading-26-4 tracking-0 text-secondary font-family-cardo"
+                  aria-label="Overall rating: 4.8 out of 5"
+                >
                   (4.8/5)
                 </span>
               </div>
@@ -849,12 +982,16 @@ export default function Home() {
             {/* Right Section */}
             <div className="w-full grid grid-cols-2">
               <div className="flex flex-col justify-center gap-5">
-                <div className="flex flex-col pl-[35px] pt-[30px] pb-[24px] pr-[50px] max-w-[381px] bg-secondary">
+                <div
+                  className="flex flex-col pl-[35px] pt-[30px] pb-[24px] pr-[50px] max-w-[381px] bg-secondary"
+                  role="article"
+                  aria-label="Review by James Williams, rating 4.5 out of 5"
+                >
                   <div className="flex items-center gap-5">
                     <div className="rounded-full overflow-hidden w-[85px] h-[85px]">
                       <Image
                         src="/images/WordsFromOurReaders/image-1.png"
-                        alt="image"
+                        alt="Portrait of James Williams"
                         width={85}
                         height={85}
                         objectFit="cover"
@@ -864,7 +1001,11 @@ export default function Home() {
                       <span className="text-2xl leading-28-8 tracking-0 text-white font-family-cardo">
                         James Williams
                       </span>
-                      <div className="flex items-center gap-[3px]">
+                      <div
+                        className="flex items-center gap-[3px]"
+                        aria-label="Rating: 4.5 out of 5"
+                        aria-hidden="true"
+                      >
                         <div className="w-3 h-3 bg-transparent rounded-full border border-primary overflow-hidden">
                           <div className="h-full w-full bg-primary" />
                         </div>
@@ -891,12 +1032,16 @@ export default function Home() {
                     that I could find it here.
                   </p>
                 </div>
-                <div className="flex flex-col pl-[35px] pt-[30px] pb-[24px] pr-[50px] max-w-[381px] bg-secondary">
+                <div
+                  className="flex flex-col pl-[35px] pt-[30px] pb-[24px] pr-[50px] max-w-[381px] bg-secondary"
+                  role="article"
+                  aria-label="Review by Chris Adams, rating 4 out of 5"
+                >
                   <div className="flex items-center gap-5">
                     <div className="rounded-full overflow-hidden w-[85px] h-[85px]">
                       <Image
                         src="/images/WordsFromOurReaders/image-3.png"
-                        alt="image"
+                        alt="Portrait of Chris Adams"
                         width={85}
                         height={85}
                         objectFit="cover"
@@ -906,7 +1051,11 @@ export default function Home() {
                       <span className="text-2xl leading-28-8 tracking-0 text-white font-family-cardo">
                         Chris Adams
                       </span>
-                      <div className="flex items-center gap-[3px]">
+                      <div
+                        className="flex items-center gap-[3px]"
+                        aria-label="Rating: 4 out of 5"
+                        aria-hidden="true"
+                      >
                         <div className="w-3 h-3 bg-transparent rounded-full border border-primary overflow-hidden">
                           <div className="h-full w-full bg-primary" />
                         </div>
@@ -935,12 +1084,16 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex flex-col justify-center gap-5">
-                <div className="flex flex-col pl-[35px] pt-[30px] pb-[24px] pr-[50px] max-w-[381px] bg-secondary">
+                <div
+                  className="flex flex-col pl-[35px] pt-[30px] pb-[24px] pr-[50px] max-w-[381px] bg-secondary"
+                  role="article"
+                  aria-label="Review by Angeline Flora, rating 4.5 out of 5"
+                >
                   <div className="flex items-center gap-5">
                     <div className="rounded-full overflow-hidden w-[85px] h-[85px]">
                       <Image
                         src="/images/WordsFromOurReaders/image-2.png"
-                        alt="image"
+                        alt="Portrait of Angeline Flora"
                         width={85}
                         height={85}
                         objectFit="cover"
@@ -950,7 +1103,11 @@ export default function Home() {
                       <span className="text-2xl leading-28-8 tracking-0 text-white font-family-cardo">
                         Angeline Flora
                       </span>
-                      <div className="flex items-center gap-[3px]">
+                      <div
+                        className="flex items-center gap-[3px]"
+                        aria-label="Rating: 4.5 out of 5"
+                        aria-hidden="true"
+                      >
                         <div className="w-3 h-3 bg-transparent rounded-full border border-primary overflow-hidden">
                           <div className="h-full w-full bg-primary" />
                         </div>
@@ -992,12 +1149,15 @@ export default function Home() {
             <div className="bg-primary w-[50px] h-[3px]" />
           </div>
           {/* Body Section */}
-          <div className="flex items-center gap-5 mt-[70px]">
-            <div className="w-full shadow rounded-[5px] overflow-hidden">
+          <div className="flex items-center gap-5 mt-[70px]" role="list">
+            <div
+              className="w-full shadow rounded-[5px] overflow-hidden"
+              role="listitem"
+            >
               <div className="w-full max-h-[350px]">
                 <Image
                   src="/images/ArticlesResources/image-1.png"
-                  alt="image"
+                  alt="Significant reading has more info number"
                   width={420}
                   height={350}
                   objectFit="cover"
@@ -1012,22 +1172,33 @@ export default function Home() {
                   DevOps for real-time schemas.
                 </p>
                 <div className="flex justify-between items-center gap-4 mt-[13px]">
-                  <button className="border-b-2 border-secondary pb-1 pr-[9px] cursor-pointer">
+                  <button
+                    className="border-b-2 border-secondary pb-1 pr-[9px] cursor-pointer"
+                    type="button"
+                    role="link"
+                    aria-label="Read more: Significant reading has more info number"
+                  >
                     <span className="text-size-19 leading-28-8 tracking-0-38 font-family-cardo text-secondary">
                       Readmore
                     </span>
                   </button>
-                  <span className="text-secondary text-base leading-25-5 tracking-0">
+                  <time
+                    className="text-secondary text-base leading-25-5 tracking-0"
+                    dateTime="2021-10-06"
+                  >
                     October 6, 2021
-                  </span>
+                  </time>
                 </div>
               </div>
             </div>
-            <div className="w-full shadow rounded-[5px] overflow-hidden">
+            <div
+              className="w-full shadow rounded-[5px] overflow-hidden"
+              role="listitem"
+            >
               <div className="w-full max-h-[350px]">
                 <Image
                   src="/images/ArticlesResources/image-2.png"
-                  alt="image"
+                  alt="Many variations of pass majority have suffered"
                   width={420}
                   height={350}
                   objectFit="cover"
@@ -1042,22 +1213,33 @@ export default function Home() {
                   value-added activity to beta test.
                 </p>
                 <div className="flex justify-between items-center gap-4 mt-[13px]">
-                  <button className="border-b-2 border-secondary pb-1 pr-[9px] cursor-pointer">
+                  <button
+                    className="border-b-2 border-secondary pb-1 pr-[9px] cursor-pointer"
+                    type="button"
+                    role="link"
+                    aria-label="Read more: Many variations of pass majority have suffered"
+                  >
                     <span className="text-size-19 leading-28-8 tracking-0-38 font-family-cardo text-secondary">
                       Readmore
                     </span>
                   </button>
-                  <span className="text-secondary text-base leading-25-5 tracking-0">
+                  <time
+                    className="text-secondary text-base leading-25-5 tracking-0"
+                    dateTime="2021-10-06"
+                  >
                     October 6, 2021
-                  </span>
+                  </time>
                 </div>
               </div>
             </div>
-            <div className="w-full shadow rounded-[5px] overflow-hidden">
+            <div
+              className="w-full shadow rounded-[5px] overflow-hidden"
+              role="listitem"
+            >
               <div className="w-full max-h-[350px]">
                 <Image
                   src="/images/ArticlesResources/image-3.png"
-                  alt="image"
+                  alt="Words which don’t look even slightly believable"
                   width={420}
                   height={350}
                   objectFit="cover"
@@ -1072,14 +1254,22 @@ export default function Home() {
                   to establish a framework.
                 </p>
                 <div className="flex justify-between items-center gap-4 mt-[13px]">
-                  <button className="border-b-2 border-secondary pb-1 pr-[9px] cursor-pointer">
+                  <button
+                    className="border-b-2 border-secondary pb-1 pr-[9px] cursor-pointer"
+                    type="button"
+                    role="link"
+                    aria-label="Read more: Words which don’t look even slightly believable"
+                  >
                     <span className="text-size-19 leading-28-8 tracking-0-38 font-family-cardo text-secondary">
                       Readmore
                     </span>
                   </button>
-                  <span className="text-secondary text-base leading-25-5 tracking-0">
+                  <time
+                    className="text-secondary text-base leading-25-5 tracking-0"
+                    dateTime="2021-10-06"
+                  >
                     October 6, 2021
-                  </span>
+                  </time>
                 </div>
               </div>
             </div>
@@ -1103,13 +1293,23 @@ export default function Home() {
             <form
               action="#"
               className="flex gap-4 items-center justify-center w-full mt-[49px]"
+              aria-label="Subscribe to updates"
             >
               <input
                 type="email"
+                name="email"
+                id="subscribe-email"
                 placeholder="Your Email ID..."
+                autoComplete="email"
+                required
+                aria-label="Email address"
                 className="w-full h-[70px] px-[39px] pt-[19px] pb-[20px] border border-denary max-w-[656px] bg-white placeholder-quinary text-black"
               />
-              <button className="bg-secondary w-full flex justify-center items-center max-w-[328px] h-[70px]">
+              <button
+                className="bg-secondary w-full flex justify-center items-center max-w-[328px] h-[70px]"
+                type="submit"
+                aria-label="Subscribe"
+              >
                 <span className="text-size-18 leading-30-4 tracking-0-18 text-white font-family-inter">
                   Subscribe
                 </span>
@@ -1131,17 +1331,19 @@ export default function Home() {
                   "space-x-2.5 flex items-center",
                   "[&>a]:w-11 [&>a]:h-11 [&>a]:bg-transparent [&>a]:text-white [&>a]:flex [&>a]:items-center [&>a]:justify-center [&>a]:aspect-square [&>a]:border [&>a]:border-primary"
                 )}
+                aria-label="Social links"
+                role="list"
               >
-                <Link href="/">
+                <Link href="/" aria-label="Facebook" role="listitem">
                   <IconFacebook />
                 </Link>
-                <Link href="/">
+                <Link href="/" aria-label="Twitter" role="listitem">
                   <IconTwitter />
                 </Link>
-                <Link href="/">
+                <Link href="/" aria-label="LinkedIn" role="listitem">
                   <IconLinkedin />
                 </Link>
-                <Link href="/">
+                <Link href="/" aria-label="Instagram" role="listitem">
                   <IconInstagram />
                 </Link>
               </div>
@@ -1150,7 +1352,10 @@ export default function Home() {
               <h3 className="text-white text-2xl leading-33-6 tracking-0-38 font-family-cardo">
                 Explore
               </h3>
-              <nav className="pl-[11px] flex flex-col gap-[9px] [&>a]:flex [&>a]:items-center [&>a]:gap-[9px] [&>a]:text-size-18 [&>a]:leading-30-6 [&>a]:tracking-0-18 [&>a]:font-family-inter [&>a]:text-quinary">
+              <nav
+                className="pl-[11px] flex flex-col gap-[9px] [&>a]:flex [&>a]:items-center [&>a]:gap-[9px] [&>a]:text-size-18 [&>a]:leading-30-6 [&>a]:tracking-0-18 [&>a]:font-family-inter [&>a]:text-quinary"
+                aria-label="Footer Explore"
+              >
                 <Link href="/">
                   <IconThreeDots className="text-[#FFCA42]" />
                   Home
@@ -1177,7 +1382,10 @@ export default function Home() {
               <h3 className="text-white text-2xl leading-33-6 tracking-0-38 font-family-cardo">
                 Utility Pages
               </h3>
-              <nav className="pl-[11px] flex flex-col gap-[9px] [&>a]:flex [&>a]:items-center [&>a]:gap-[9px] [&>a]:text-size-18 [&>a]:leading-30-6 [&>a]:tracking-0-18 [&>a]:font-family-inter [&>a]:text-quinary">
+              <nav
+                className="pl-[11px] flex flex-col gap-[9px] [&>a]:flex [&>a]:items-center [&>a]:gap-[9px] [&>a]:text-size-18 [&>a]:leading-30-6 [&>a]:tracking-0-18 [&>a]:font-family-inter [&>a]:text-quinary"
+                aria-label="Footer Utility"
+              >
                 <Link href="/">
                   <IconThreeDots className="text-[#FFCA42]" />
                   Style Guide
@@ -1200,13 +1408,19 @@ export default function Home() {
                 </Link>
               </nav>
             </div>
-            <div className="ml-[93px] flex flex-col">
+            <address
+              className="ml-[93px] flex flex-col not-italic"
+              aria-label="Keep in touch contact details"
+            >
               <h3 className="text-white text-2xl leading-33-6 tracking-0-38 font-family-cardo">
                 Keep in Touch
               </h3>
               <div className="flex gap-7 mt-[27px]">
                 <div className=" flex flex-col gap-7 [&>*]:text-white [&>*]:font-family-cardo [&>*]:text-size-18 [&>*]:leading-27 [&>*]:tracking-0-36 ">
-                  <div>Address :</div>
+                  <div>
+                    Address : <br />
+                    <br />
+                  </div>
                   <div>Mail :</div>
                   <div>Phone :</div>
                 </div>
@@ -1214,11 +1428,25 @@ export default function Home() {
                   <div>
                     24A Kingston St, Los Vegas <br /> NC 28202, USA.
                   </div>
-                  <div>support@pages.com</div>
-                  <div>(+22) 123 - 4567 - 900</div>
+                  <div>
+                    <a
+                      href="mailto:support@pages.com"
+                      className="no-underline text-inherit"
+                    >
+                      support@pages.com
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="tel:+221234567900"
+                      className="no-underline text-inherit"
+                    >
+                      (+22) 123 - 4567 - 900
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
+            </address>
           </div>
           <div>
             <p className="text-center text-quinary text-size-17 leading-25-5 tracking-0-17 font-family-inter [&>a]:text-white">
