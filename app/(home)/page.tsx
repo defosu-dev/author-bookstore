@@ -979,6 +979,110 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="bg-novanary px-4">
+        <div className="container mx-auto max-w-[1300px] pt-[130px] pb-[150px]">
+          {/* Title Section */}
+          <div className="flex flex-col gap-[23px] items-center">
+            <h2 className="text-secondary font-family-cardo text-size-42 leading-50-4 tracking-0 ">
+              Articles & Resources
+            </h2>
+            <div className="bg-primary w-[50px] h-[3px]" />
+          </div>
+          {/* Body Section */}
+          <div className="flex items-center gap-5 mt-[70px]">
+            <div className="w-full shadow rounded-[5px] overflow-hidden">
+              <div className="w-full max-h-[350px]">
+                <Image
+                  src="/images/ArticlesResources/image-1.png"
+                  alt="image"
+                  width={420}
+                  height={350}
+                  objectFit="cover"
+                />
+              </div>
+              <div className="flex flex-col p-[30px] bg-white">
+                <h3 className="text-2xl leading-33-6 tracking-0-24 text-secondary font-family-cardo">
+                  Significant reading has more info number
+                </h3>
+                <p className="text-octonary text-size-19 leading-30-4 tracking-0 mt-[19px]">
+                  Override the digital divide with additional clickthroughs from
+                  DevOps for real-time schemas.
+                </p>
+                <div className="flex justify-between items-center gap-4 mt-[13px]">
+                  <button className="border-b-2 border-secondary pb-1 pr-[9px] cursor-pointer">
+                    <span className="text-size-19 leading-28-8 tracking-0-38 font-family-cardo text-secondary">
+                      Readmore
+                    </span>
+                  </button>
+                  <span className="text-secondary text-base leading-25-5 tracking-0">
+                    October 6, 2021
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="w-full shadow rounded-[5px] overflow-hidden">
+              <div className="w-full max-h-[350px]">
+                <Image
+                  src="/images/ArticlesResources/image-2.png"
+                  alt="image"
+                  width={420}
+                  height={350}
+                  objectFit="cover"
+                />
+              </div>
+              <div className="flex flex-col p-[30px] bg-white">
+                <h3 className="text-2xl leading-33-6 tracking-0-24 text-secondary font-family-cardo">
+                  Many variations of pass majority have suffered
+                </h3>
+                <p className="text-octonary text-size-19 leading-30-4 tracking-0 mt-[19px]">
+                  Capitalize on low-hanging fruit to identify a ballpark
+                  value-added activity to beta test.
+                </p>
+                <div className="flex justify-between items-center gap-4 mt-[13px]">
+                  <button className="border-b-2 border-secondary pb-1 pr-[9px] cursor-pointer">
+                    <span className="text-size-19 leading-28-8 tracking-0-38 font-family-cardo text-secondary">
+                      Readmore
+                    </span>
+                  </button>
+                  <span className="text-secondary text-base leading-25-5 tracking-0">
+                    October 6, 2021
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="w-full shadow rounded-[5px] overflow-hidden">
+              <div className="w-full max-h-[350px]">
+                <Image
+                  src="/images/ArticlesResources/image-3.png"
+                  alt="image"
+                  width={420}
+                  height={350}
+                  objectFit="cover"
+                />
+              </div>
+              <div className="flex flex-col p-[30px] bg-white">
+                <h3 className="text-2xl leading-33-6 tracking-0-24 text-secondary font-family-cardo">
+                  Words which don’t look even slightly believable
+                </h3>
+                <p className="text-octonary text-size-19 leading-30-4 tracking-0 mt-[19px]">
+                  Podcasting operational change management inside of workflows
+                  to establish a framework.
+                </p>
+                <div className="flex justify-between items-center gap-4 mt-[13px]">
+                  <button className="border-b-2 border-secondary pb-1 pr-[9px] cursor-pointer">
+                    <span className="text-size-19 leading-28-8 tracking-0-38 font-family-cardo text-secondary">
+                      Readmore
+                    </span>
+                  </button>
+                  <span className="text-secondary text-base leading-25-5 tracking-0">
+                    October 6, 2021
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

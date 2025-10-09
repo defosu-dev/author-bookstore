@@ -29,6 +29,7 @@
   --leading-27: 1.6875rem;
   --leading-28-5: 1.78125rem;
   --leading-28-8: 1.80625rem;
+  --leading-30-4: 1.89375rem;
   --leading-30-6: 1.8875rem;
   --leading-30-8: 1.925rem;
   --leading-32-3: 2.01875rem;
@@ -45,6 +46,7 @@
   --tracking-0: 0rem;
   --tracking-0-17: 0.010625rem;
   --tracking-0-18: 0.01125rem;
+  --tracking-0-24: 0.015rem;
   --tracking-0-32: 0.02rem;
   --tracking-0-38: 0.02375rem;
   --tracking-0-48: 0.03rem;
@@ -87,6 +89,7 @@
   --leading-27: var(--leading-27);
   --leading-28-5: var(--leading-28-5);
   --leading-28-8: var(--leading-28-8);
+  --leading-30-4: var(--leading-30-4);
   --leading-30-6: var(--leading-30-6);
   --leading-30-8: var(--leading-30-8);
   --leading-32-3: var(--leading-32-3);
@@ -103,6 +106,7 @@
   --tracking-0: var(--tracking-0);
   --tracking-0-17: var(--tracking-0-17);
   --tracking-0-18: var(--tracking-0-18);
+  --tracking-0-24: var(--tracking-0-24);
   --tracking-0-32: var(--tracking-0-32);
   --tracking-0-38: var(--tracking-0-38);
   --tracking-0-48: var(--tracking-0-48);
