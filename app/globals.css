@@ -30,6 +30,8 @@
   --leading-28-5: 1.78125rem;
   --leading-28-8: 1.80625rem;
   --leading-30-6: 1.8875rem;
+  --leading-30-8: 1.925rem;
+  --leading-32-3: 2.01875rem;
   --leading-33: 2.0625rem;
   --leading-33-6: 2.1rem;
   --leading-34-2: 2.1375rem;
@@ -86,6 +88,8 @@
   --leading-28-5: var(--leading-28-5);
   --leading-28-8: var(--leading-28-8);
   --leading-30-6: var(--leading-30-6);
+  --leading-30-8: var(--leading-30-8);
+  --leading-32-3: var(--leading-32-3);
   --leading-33: var(--leading-33);
   --leading-33-6: var(--leading-33-6);
   --leading-34-2: var(--leading-34-2);

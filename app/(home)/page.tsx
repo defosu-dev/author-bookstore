@@ -47,8 +47,10 @@ export default function Home() {
               <Link href="/">Pages</Link>
               <Link href="/">Contact Us</Link>
             </nav>
-            <button className="bg-primary text-secondary text-size-19 leading-28-5 tracking-0-57 font-family-cardo px-13 py-4.5 w-fit">
-              Order Today
+            <button className="bg-primary px-13 py-4.5 w-fit cursor-pointer">
+              <span className="text-size-19 leading-28-5 tracking-0-57 font-family-cardo text-secondary">
+                Order Today
+              </span>
             </button>
           </div>
         </header>
@@ -82,12 +84,16 @@ export default function Home() {
             <p className="text-size-18 leading-28-5 tracking-0 font-family-inter text-quinary">
               They’re where authors can connect with readers.
             </p>
-            <div className="flex items-center gap-4 mt-[42px]">
-              <button className="bg-primary text-secondary text-size-19 leading-28-5 tracking-0-57 font-family-cardo px-13 py-4.5 w-fit">
-                Order Today
+            <div className="flex items-center gap-[51px] mt-[42px]">
+              <button className="bg-primary px-13 py-4.5 w-fit cursor-pointer">
+                <span className="text-size-19 leading-28-5 tracking-0-57 font-family-cardo text-secondary">
+                  Order Today
+                </span>
               </button>
-              <button className="text-size-19 leading-28-5 tracking-0-57 font-family-cardo text-white border-b border-white pb-0.5 pr-[11px]">
-                Read Free Demo
+              <button className="border-b border-white pb-0.5 pr-[11px] cursor-pointer">
+                <span className="text-size-19 leading-28-5 tracking-0-57 font-family-cardo text-white">
+                  Read Free Demo
+                </span>
               </button>
             </div>
             <div className="flex items-center gap-[60px] mt-[50px]">
@@ -606,6 +612,369 @@ export default function Home() {
                 height={632}
                 className="object-cover w-full h-full shadow-lg translate-x-[-30px] translate-y-[-30px]"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-novanary px-4">
+        <div className="container mx-auto max-w-[1300px] pt-[120px] pb-[130px] flex flex-col items-center gap-[70px]">
+          {/* Title Section */}
+          <div className="flex flex-col gap-[23px] items-center">
+            <h2 className="text-secondary font-family-cardo text-size-42 leading-50-4 tracking-0 ">
+              Enhance knowledge & Vision
+            </h2>
+            <div className="bg-primary w-[50px] h-[3px]" />
+          </div>
+          {/* Body Section */}
+          <div className="grid grid-cols-2 gap-[30px]">
+            <div className="bg-white px-10 pt-[42px] pb-11 flex flex-col">
+              <h3 className="text-secondary font-family-cardo text-2xl leading-28-8 tracking-0">
+                Chapter-1 Get Started Intro
+              </h3>
+              <p className="text-octonary text-size-19 leading-32-3 tracking-0 mt-[21px]">
+                You can double your knowledge by reading this ever <br /> needed
+                book that can last a lifetime.
+              </p>
+              <div className="flex item-center gap-[45px] mt-2.5">
+                <div className="flex gap-2.5 items-baseline">
+                  <span className="flex gap-2.5 items-center text-size-22 leading-30-8 tracking-0-48 text-secondary font-family-cardo">
+                    <div className="w-4 h-4 bg-primary rounded-full" />
+                    Pages :
+                  </span>
+                  <span
+                    className={cn(
+                      "text-size-17 leading-27 tracking-0 font-family-inter text-octonary"
+                    )}
+                  >
+                    106pages
+                  </span>
+                </div>
+                <div className="flex gap-2.5 items-baseline">
+                  <span className="flex gap-2.5 items-center text-size-22 leading-30-8 tracking-0-48 text-secondary font-family-cardo">
+                    <div className="w-4 h-4 bg-primary rounded-full" />
+                    Length :
+                  </span>
+                  <span
+                    className={cn(
+                      "text-size-17 leading-27 tracking-0 font-family-inter text-octonary"
+                    )}
+                  >
+                    2 Hours
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white px-10 pt-[42px] pb-11 flex flex-col">
+              <h3 className="text-secondary font-family-cardo text-2xl leading-28-8 tracking-0">
+                Chapter-2 The Roman Culture
+              </h3>
+              <p className="text-octonary text-size-19 leading-32-3 tracking-0 mt-[21px]">
+                It will help to improve your life career with the perfect <br />
+                and needed knowledge about your life.
+              </p>
+              <div className="flex item-center gap-[45px] mt-2.5">
+                <div className="flex gap-2.5 items-baseline">
+                  <span className="flex gap-2.5 items-center text-size-22 leading-30-8 tracking-0-48 text-secondary font-family-cardo">
+                    <div className="w-4 h-4 bg-primary rounded-full" />
+                    Pages :
+                  </span>
+                  <span
+                    className={cn(
+                      "text-size-17 leading-27 tracking-0 font-family-inter text-octonary"
+                    )}
+                  >
+                    180pages
+                  </span>
+                </div>
+                <div className="flex gap-2.5 items-baseline">
+                  <span className="flex gap-2.5 items-center text-size-22 leading-30-8 tracking-0-48 text-secondary font-family-cardo">
+                    <div className="w-4 h-4 bg-primary rounded-full" />
+                    Length :
+                  </span>
+                  <span
+                    className={cn(
+                      "text-size-17 leading-27 tracking-0 font-family-inter text-octonary"
+                    )}
+                  >
+                    3 Hours
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white px-10 pt-[42px] pb-11 flex flex-col">
+              <h3 className="text-secondary font-family-cardo text-2xl leading-28-8 tracking-0">
+                Chapter-3 How They Servived
+              </h3>
+              <p className="text-octonary text-size-19 leading-32-3 tracking-0 mt-[21px]">
+                We wanted to create an easy, convenient way for you to <br />
+                get your books & support.
+              </p>
+              <div className="flex item-center gap-[45px] mt-2.5">
+                <div className="flex gap-2.5 items-baseline">
+                  <span className="flex gap-2.5 items-center text-size-22 leading-30-8 tracking-0-48 text-secondary font-family-cardo">
+                    <div className="w-4 h-4 bg-primary rounded-full" />
+                    Pages :
+                  </span>
+                  <span
+                    className={cn(
+                      "text-size-17 leading-27 tracking-0 font-family-inter text-octonary"
+                    )}
+                  >
+                    250pages
+                  </span>
+                </div>
+                <div className="flex gap-2.5 items-baseline">
+                  <span className="flex gap-2.5 items-center text-size-22 leading-30-8 tracking-0-48 text-secondary font-family-cardo">
+                    <div className="w-4 h-4 bg-primary rounded-full" />
+                    Length :
+                  </span>
+                  <span
+                    className={cn(
+                      "text-size-17 leading-27 tracking-0 font-family-inter text-octonary"
+                    )}
+                  >
+                    4 Hours
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white px-10 pt-[42px] pb-11 flex flex-col">
+              <h3 className="text-secondary font-family-cardo text-2xl leading-28-8 tracking-0">
+                Chapter-4 The End Of Romans
+              </h3>
+              <p className="text-octonary text-size-19 leading-32-3 tracking-0 mt-[21px]">
+                Promote your book via Pages shop to support your writing <br />&
+                reading career.
+              </p>
+              <div className="flex item-center gap-[45px] mt-2.5">
+                <div className="flex gap-2.5 items-baseline">
+                  <span className="flex gap-2.5 items-center text-size-22 leading-30-8 tracking-0-48 text-secondary font-family-cardo">
+                    <div className="w-4 h-4 bg-primary rounded-full" />
+                    Pages :
+                  </span>
+                  <span
+                    className={cn(
+                      "text-size-17 leading-27 tracking-0 font-family-inter text-octonary"
+                    )}
+                  >
+                    175pages
+                  </span>
+                </div>
+                <div className="flex gap-2.5 items-baseline">
+                  <span className="flex gap-2.5 items-center text-size-22 leading-30-8 tracking-0-48 text-secondary font-family-cardo">
+                    <div className="w-4 h-4 bg-primary rounded-full" />
+                    Length :
+                  </span>
+                  <span
+                    className={cn(
+                      "text-size-17 leading-27 tracking-0 font-family-inter text-octonary"
+                    )}
+                  >
+                    3 Hours
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col items-center">
+            <button className="bg-primary px-[100px] py-7 w-fit cursor-pointer">
+              <span className="text-size-19 leading-28-5 tracking-0-57 font-family-cardo text-secondary">
+                Start a 15-Days Free Trail
+              </span>
+            </button>
+            <p className="mt-[34px] text-octonary text-size-18 leading-28-5 tracking-0">
+              Short description about each chapter
+            </p>
+            <p className="text-octonary text-size-18 leading-28-5 tracking-0">
+              <Link
+                href="/"
+                className="text-secondary text-size-18 leading-28-5 tracking-0 font-family-inter"
+              >
+                Have any questions?
+              </Link>{" "}
+              Contact us
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="bg-white px-4">
+        <div className="container mx-auto max-w-[1300px] pt-[130px] pb-[150px]">
+          <div className="flex gap-[63px]">
+            {/* Left Section */}
+            <div className="flex flex-col w-full max-w-[440px] justify-center">
+              {/* Title Section */}
+              <div className="flex flex-col gap-[23px]">
+                <h2 className="text-secondary font-family-cardo text-size-42 leading-50-4 tracking-0 ">
+                  Words From Our Readers
+                </h2>
+                <div className="bg-primary w-[50px] h-[3px]" />
+              </div>
+              {/* Description */}
+              <p className="text-octonary text-size-19 leading-34-2 tracking-0 mt-[33px]">
+                We believe that bookstores are essential to a healthy culture.
+                They’re where authors can connect with readers, where we
+                discover new writers, where children get hooked on the thrill of
+                reading that can last a lifetime.
+              </p>
+              {/* Rating*/}
+              <div className="flex items-center gap-2.5 mt-[24px]">
+                <div className="flex items-center gap-[5px]">
+                  <div className="w-5 h-5 bg-transparent rounded-full border border-primary overflow-hidden">
+                    <div className="h-full w-full bg-primary" />
+                  </div>
+                  <div className="w-5 h-5 bg-transparent rounded-full border border-primary overflow-hidden">
+                    <div className="h-full w-full bg-primary" />
+                  </div>
+                  <div className="w-5 h-5 bg-transparent rounded-full border border-primary overflow-hidden">
+                    <div className="h-full w-full bg-primary" />
+                  </div>
+                  <div className="w-5 h-5 bg-transparent rounded-full border border-primary overflow-hidden">
+                    <div className="h-full w-full bg-primary" />
+                  </div>
+                  <div className="w-5 h-5 bg-transparent rounded-full border border-primary overflow-hidden">
+                    <div className="h-full w-1/2 bg-primary" />
+                  </div>
+                </div>
+                <span className="text-size-22 leading-26-4 tracking-0 text-secondary font-family-cardo">
+                  (4.8/5)
+                </span>
+              </div>
+              <p className="text-secondary text-size-18 leading-28-5 tracking-0 mt-2.5">
+                Overall Customer Ratings
+              </p>
+            </div>
+            {/* Right Section */}
+            <div className="w-full grid grid-cols-2">
+              <div className="flex flex-col justify-center gap-5">
+                <div className="flex flex-col pl-[35px] pt-[30px] pb-[24px] pr-[50px] max-w-[381px] bg-secondary">
+                  <div className="flex items-center gap-5">
+                    <div className="rounded-full overflow-hidden w-[85px] h-[85px]">
+                      <Image
+                        src="/images/WordsFromOurReaders/image-1.png"
+                        alt="image"
+                        width={85}
+                        height={85}
+                        objectFit="cover"
+                      />
+                    </div>
+                    <div className="flex flex-col gap-[15px]">
+                      <span className="text-2xl leading-28-8 tracking-0 text-white font-family-cardo">
+                        James Williams
+                      </span>
+                      <div className="flex items-center gap-[3px]">
+                        <div className="w-3 h-3 bg-transparent rounded-full border border-primary overflow-hidden">
+                          <div className="h-full w-full bg-primary" />
+                        </div>
+                        <div className="w-3 h-3 bg-transparent rounded-full border border-primary overflow-hidden">
+                          <div className="h-full w-full bg-primary" />
+                        </div>
+                        <div className="w-3 h-3 bg-transparent rounded-full border border-primary overflow-hidden">
+                          <div className="h-full w-full bg-primary" />
+                        </div>
+                        <div className="w-3 h-3 bg-transparent rounded-full border border-primary overflow-hidden">
+                          <div className="h-full w-full bg-primary" />
+                        </div>
+                        <div className="w-3 h-3 bg-transparent rounded-full border border-primary overflow-hidden">
+                          <div className="h-full w-1/2 bg-primary" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-white text-size-22 leading-33 tracking-0 mt-[30px] font-family-cardo">
+                    “ Great Books Collections ”
+                  </p>
+                  <p className="text-quinary text-size-18 leading-28-8 tracking-0 mt-[13px]">
+                    I was searching this book for many years and I was happy
+                    that I could find it here.
+                  </p>
+                </div>
+                <div className="flex flex-col pl-[35px] pt-[30px] pb-[24px] pr-[50px] max-w-[381px] bg-secondary">
+                  <div className="flex items-center gap-5">
+                    <div className="rounded-full overflow-hidden w-[85px] h-[85px]">
+                      <Image
+                        src="/images/WordsFromOurReaders/image-3.png"
+                        alt="image"
+                        width={85}
+                        height={85}
+                        objectFit="cover"
+                      />
+                    </div>
+                    <div className="flex flex-col gap-[15px]">
+                      <span className="text-2xl leading-28-8 tracking-0 text-white font-family-cardo">
+                        Chris Adams
+                      </span>
+                      <div className="flex items-center gap-[3px]">
+                        <div className="w-3 h-3 bg-transparent rounded-full border border-primary overflow-hidden">
+                          <div className="h-full w-full bg-primary" />
+                        </div>
+                        <div className="w-3 h-3 bg-transparent rounded-full border border-primary overflow-hidden">
+                          <div className="h-full w-full bg-primary" />
+                        </div>
+                        <div className="w-3 h-3 bg-transparent rounded-full border border-primary overflow-hidden">
+                          <div className="h-full w-full bg-primary" />
+                        </div>
+                        <div className="w-3 h-3 bg-transparent rounded-full border border-primary overflow-hidden">
+                          <div className="h-full w-full bg-primary" />
+                        </div>
+                        <div className="w-3 h-3 bg-transparent rounded-full border border-primary overflow-hidden">
+                          <div className="h-full w-0 bg-primary" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-white text-size-22 leading-33 tracking-0 mt-[30px] font-family-cardo">
+                    “ Perfect Response Author”
+                  </p>
+                  <p className="text-quinary text-size-18 leading-28-8 tracking-0 mt-[13px]">
+                    I had a question about the book and the author response was
+                    great & comfort.
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col justify-center gap-5">
+                <div className="flex flex-col pl-[35px] pt-[30px] pb-[24px] pr-[50px] max-w-[381px] bg-secondary">
+                  <div className="flex items-center gap-5">
+                    <div className="rounded-full overflow-hidden w-[85px] h-[85px]">
+                      <Image
+                        src="/images/WordsFromOurReaders/image-2.png"
+                        alt="image"
+                        width={85}
+                        height={85}
+                        objectFit="cover"
+                      />
+                    </div>
+                    <div className="flex flex-col gap-[15px]">
+                      <span className="text-2xl leading-28-8 tracking-0 text-white font-family-cardo">
+                        Angeline Flora
+                      </span>
+                      <div className="flex items-center gap-[3px]">
+                        <div className="w-3 h-3 bg-transparent rounded-full border border-primary overflow-hidden">
+                          <div className="h-full w-full bg-primary" />
+                        </div>
+                        <div className="w-3 h-3 bg-transparent rounded-full border border-primary overflow-hidden">
+                          <div className="h-full w-full bg-primary" />
+                        </div>
+                        <div className="w-3 h-3 bg-transparent rounded-full border border-primary overflow-hidden">
+                          <div className="h-full w-full bg-primary" />
+                        </div>
+                        <div className="w-3 h-3 bg-transparent rounded-full border border-primary overflow-hidden">
+                          <div className="h-full w-full bg-primary" />
+                        </div>
+                        <div className="w-3 h-3 bg-transparent rounded-full border border-primary overflow-hidden">
+                          <div className="h-full w-1/2 bg-primary" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-white text-size-22 leading-33 tracking-0 mt-[30px] font-family-cardo">
+                    “ Creative Writing Skill”
+                  </p>
+                  <p className="text-quinary text-size-18 leading-28-8 tracking-0 mt-[13px]">
+                    Sent an email after to books arrived to ask about the author
+                    & I received a reply.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
