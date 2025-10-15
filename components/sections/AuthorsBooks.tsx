@@ -20,13 +20,13 @@ function BookCard(props: {
       className={cn("flex flex-col md:flex-row", "gap-5 md:gap-[30px]")}
       role="listitem"
     >
-      <div className="w-full h-full">
+      <div className="w-full h-full max-w-[285px] max-h-[382px] shadow-[0px_0px_11px_0px_rgba(0,0,0,0.2)] ">
         <Image
           src={imageSrc}
           alt={imageAlt}
           width={285}
           height={382}
-          className="w-full h-full"
+          className="w-full h-full object-cover"
           objectFit="cover"
         />
       </div>
@@ -36,8 +36,8 @@ function BookCard(props: {
         </Typography>
         <span
           className={cn(
-            "font-family-inter text-size-21 tracking-0 text-primary",
-            "mt-[7px]"
+            "font-family-inter text-size-21 tracking-[0.6px] text-primary",
+            "mt-[9px]"
           )}
         >
           {price}
@@ -52,22 +52,25 @@ function BookCard(props: {
         </p>
         <span
           className={cn(
-            "flex gap-2.5 items-center text-2xl leading-28-8 tracking-0-48 text-secondary font-family-cardo",
-            "mt-[13px]"
+            "flex gap-2.5 items-center relative pl-[26px] text-2xl leading-28-8 tracking-0 text-secondary font-family-cardo",
+            "mt-[14px]"
           )}
         >
-          <div className="w-4 h-4 bg-primary rounded-full" />
+          <div className="w-4 h-4 bg-primary rounded-full absolute left-0 top-2" />
           Printed Book
         </span>
         <Button
-          className={cn("mt-[27px]")}
+          className={cn(
+            "mt-[27px]",
+            "pt-[17px] pb-[16px] tracking-[0.02rem] pl-[45px] pr-[45px]"
+          )}
           variant="outline"
           tone="primary"
           type="button"
           role="link"
           aria-label={orderAria}
         >
-          Order Now
+          <span className="px-1 pr-2 ">Order Now</span>
         </Button>
       </div>
     </div>
@@ -82,14 +85,17 @@ export default function AuthorsBooks() {
           <Typography
             as="h2"
             variant="h2"
-            className="text-secondary font-family-cardo text-size-42 leading-50-4 tracking-0 "
+            className="text-secondary font-family-cardo text-[41px] leading-50-4 tracking-[0.6px] "
           >
             {data.titles.authorsBooks}
           </Typography>
           <div className="bg-primary w-[50px] h-[3px]" />
         </div>
         <div
-          className={cn("grid", "grid-cols-1 md:grid-cols-2 gap-6 md:gap-5")}
+          className={cn(
+            "grid",
+            "grid-cols-1 md:grid-cols-2 gap-6 md:gap-5 pt-0.5"
+          )}
           role="list"
         >
           {data.books.map((b) => (
