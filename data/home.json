@@ -1,0 +1,234 @@
+{
+  "books": [
+    {
+      "imageSrc": "/images/TheAuthorsBooks/image-1.png",
+      "imageAlt": "Cover of Atomic One’s",
+      "title": "Atomic One’s",
+      "price": "$ 13.84 USD",
+      "description": "As the book contains theoretical content as well as solved questions.",
+      "orderAria": "Order Atomic One’s"
+    },
+    {
+      "imageSrc": "/images/TheAuthorsBooks/image-2.png",
+      "imageAlt": "Cover of The Dark Light",
+      "title": "The Dark Light",
+      "price": "$ 86.11 USD",
+      "description": "As the book contains theoretical content as well as solved questions.",
+      "orderAria": "Order The Dark Light"
+    }
+  ],
+  "header": {
+    "nav": ["Home", "About", "Pages", "Contact Us"],
+    "cta": "Order Today"
+  },
+  "hero": {
+    "eyebrow": "Welcome to Pages!!!",
+    "titleLine1": "Your Books From",
+    "titleLine2": "The Best Writer.",
+    "desc1": "We believe that reading books are essential to a healthy culture.",
+    "desc2": "They’re where authors can connect with readers.",
+    "primaryCta": "Order Today",
+    "secondaryCta": "Read Free Demo",
+    "stats": {
+      "pagesLabel": "Pages:",
+      "pagesValue": "250pages",
+      "lengthLabel": "Length:",
+      "lengthValue": "10 Hours",
+      "ratingLabel": "Rating:",
+      "ratingValue": "4.5/5 (305 ratings)"
+    }
+  },
+  "titles": {
+    "authorsBooks": "The Author's Books",
+    "aboutAuthor": "About the Author",
+    "trusted": "Trusted By The Best",
+    "getBookCopy": "Get Book Copy Today!",
+    "whatWillYouLearn": "What Will You Learn?",
+    "enhance": "Enhance knowledge & Vision",
+    "articles": "Articles & Resources",
+    "readers": "Words From Our Readers",
+    "updates": "Get The Best Updates"
+  },
+  "about": {
+    "desc": "We believe that bookstores are essential to a healthy culture. They’re where authors can connect with readers, where we discover new writers, where children get hooked on the thrill of reading that can last a lifetime.",
+    "stats": [
+      { "value": "02", "label": "Books Published" },
+      { "value": "4.5", "label": "User Reviews" },
+      { "value": "04", "label": "Best Seller Awards" }
+    ],
+    "contact": {
+      "name": "John Abraham , Ph.d",
+      "email": "johnabraham@gmail.com",
+      "phone": "(+2) 123 545 9000"
+    }
+  },
+  "getBookCopy": {
+    "desc": "We believe that bookstores are essential to a healthy culture. They’re where authors can connect with readers.",
+    "cta": "Order Now"
+  },
+  "trusted": [
+    {
+      "src": "/images/TrustedByTheBest/image-1.png",
+      "alt": "Amazen Corp. logo",
+      "title": "Amazen Corp.",
+      "desc": "They has been helping readers, music lovers, and videophiles find quality material."
+    },
+    {
+      "src": "/images/TrustedByTheBest/image-2.png",
+      "alt": "Megan Books logo",
+      "title": "Megan Books",
+      "desc": "We help physical bookstores manage their overstock to the book inventory."
+    },
+    {
+      "src": "/images/TrustedByTheBest/image-3.png",
+      "alt": "Megank logo",
+      "title": "Megank",
+      "desc": "Bookstore serving up the full spectrum of Black literature and wine black books."
+    },
+    {
+      "src": "/images/TrustedByTheBest/image-4.png",
+      "alt": "Urban Store logo",
+      "title": "Urban Store",
+      "desc": "We also carry the latest records, issues of all of your favorite comic books."
+    }
+  ],
+  "learn": [
+    {
+      "index": "01",
+      "text": "Use HDFS & Map Reduce for storing & analyzing data at scale."
+    },
+    {
+      "index": "02",
+      "text": "Consume streaming data using Spark Streaming, Flink, and Storm."
+    },
+    {
+      "index": "03",
+      "text": "Choose an appropriate data storage technology for your application"
+    },
+    {
+      "index": "04",
+      "text": "Analyze non-relational data using HBase, Cassandra, and MongoDB."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Chapter-1 Get Started Intro",
+      "desc": "You can double your knowledge by reading this ever needed book that can last a lifetime.",
+      "pages": "106pages",
+      "length": "2 Hours"
+    },
+    {
+      "title": "Chapter-2 The Roman Culture",
+      "desc": "It will help to improve your life career with the perfect and needed knowledge about your life.",
+      "pages": "180pages",
+      "length": "3 Hours"
+    },
+    {
+      "title": "Chapter-3 How They Servived",
+      "desc": "We wanted to create an easy, convenient way for you to get your books & support.",
+      "pages": "250pages",
+      "length": "4 Hours"
+    },
+    {
+      "title": "Chapter-4 The End Of Romans",
+      "desc": "Promote your book via Pages shop to support your writing & reading career.",
+      "pages": "175pages",
+      "length": "3 Hours"
+    }
+  ],
+  "enhanceCta": {
+    "label": "Start a 15-Days Free Trail",
+    "desc": "Short description about each chapter",
+    "questionPrefix": "Have any questions?",
+    "contactText": "Contact us",
+    "questionHref": "/"
+  },
+  "articles": [
+    {
+      "src": "/images/ArticlesResources/image-1.png",
+      "alt": "Significant reading has more info number",
+      "title": "Significant reading has more info number",
+      "body": "Override the digital divide with additional clickthroughs from DevOps for real-time schemas.",
+      "aria": "Read more: Significant reading has more info number",
+      "date": "October 6, 2021",
+      "dateTime": "2021-10-06"
+    },
+    {
+      "src": "/images/ArticlesResources/image-2.png",
+      "alt": "Many variations of pass majority have suffered",
+      "title": "Many variations of pass majority have suffered",
+      "body": "Capitalize on low-hanging fruit to identify a ballpark value-added activity to beta test.",
+      "aria": "Read more: Many variations of pass majority have suffered",
+      "date": "October 6, 2021",
+      "dateTime": "2021-10-06"
+    },
+    {
+      "src": "/images/ArticlesResources/image-3.png",
+      "alt": "Words which don’t look even slightly believable",
+      "title": "Words which don’t look even slightly believable",
+      "body": "Podcasting operational change management inside of workflows to establish a framework.",
+      "aria": "Read more: Words which don’t look even slightly believable",
+      "date": "October 6, 2021",
+      "dateTime": "2021-10-06"
+    }
+  ],
+  "reviews": [
+    {
+      "src": "/images/WordsFromOurReaders/image-1.png",
+      "alt": "Portrait of James Williams",
+      "name": "James Williams",
+      "quote": " Great Books Collections ",
+      "body": "I was searching this book for many years and I was happy that I could find it here.",
+      "ratingAria": "Review by James Williams, rating 4.5 out of 5",
+      "half": true
+    },
+    {
+      "src": "/images/WordsFromOurReaders/image-3.png",
+      "alt": "Portrait of Chris Adams",
+      "name": "Chris Adams",
+      "quote": " Perfect Response Author",
+      "body": "I had a question about the book and the author response was great & comfort.",
+      "ratingAria": "Review by Chris Adams, rating 4 out of 5",
+      "half": false
+    },
+    {
+      "src": "/images/WordsFromOurReaders/image-2.png",
+      "alt": "Portrait of Angeline Flora",
+      "name": "Angeline Flora",
+      "quote": " Creative Writing Skill",
+      "body": "Sent an email after to books arrived to ask about the author & I received a reply.",
+      "ratingAria": "Review by Angeline Flora, rating 4.5 out of 5",
+      "half": true
+    }
+  ],
+  "readers": {
+    "overallRating": "(4.8/5)",
+    "overallLabel": "Overall Customer Ratings"
+  },
+  "articlesReadMoreLabel": "Readmore",
+  "updates": {
+    "desc": "Subscribe with your mail id to know the current update in book edition at your fingertip with in a minute.",
+    "cta": "Subscribe"
+  },
+  "footer": {
+    "exploreTitle": "Explore",
+    "explore": ["Home", "About", "Articles", "Our Store", "Contact Us"],
+    "utilityTitle": "Utility Pages",
+    "utility": [
+      "Style Guide",
+      "404 Not Found",
+      "Password Protected",
+      "Licenses",
+      "Changelog"
+    ],
+    "keepInTouchTitle": "Keep in Touch",
+    "addressLines": ["24A Kingston St, Los Vegas", "NC 28202, USA."],
+    "email": "support@pages.com",
+    "phone": "(+22) 123 - 4567 - 900",
+    "copyrightLeft": "© Drafted by",
+    "copyrightBrand": "VictorFlow",
+    "poweredLeft": " - Powered by Link",
+    "poweredBrand": "Webflow"
+  }
+}
+
