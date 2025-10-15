@@ -15,7 +15,7 @@ export default function HeaderBar() {
     <header className="px-4 bg-secondary">
       <div
         className={cn(
-          "container mx-auto max-w-[1300px] flex items-center py-[22px]",
+          "container mx-auto max-w-[1300px] flex items-center py-[16px] pb-5",
           "justify-between"
         )}
       >
@@ -100,9 +100,9 @@ export default function HeaderBar() {
             type="button"
             role="link"
             aria-label="Order Today"
-            className="hidden sm:inline-flex px-[53px] py-[19px] tracking-[0.88px] leading-7"
+            className="hidden sm:inline-flex px-[49px] py-[19px] pb-[22px] tracking-[0.53px] leading-6"
           >
-            <span>{data.header.cta}</span>
+            <span className="px-1 pr-2">{data.header.cta}</span>
           </Button>
         </div>
       </div>
