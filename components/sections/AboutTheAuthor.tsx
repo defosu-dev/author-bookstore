@@ -15,12 +15,12 @@ export default function AboutTheAuthor() {
             alt="Portrait of John Abraham"
             width={525}
             height={620}
-            className="w-full h-full shadow-lg translate-x-[-30px] translate-y-[-30px]"
+            className="w-full h-full translate-x-[-40px] translate-y-[-40px] shadow-[0px_0px_20px_0px_rgba(27,55,100,0.3)]"
             objectFit="cover"
           />
         </div>
         <div className="flex w-full flex-col order-1 lg:order-2">
-          <div className="flex flex-col gap-[23px]">
+          <div className={cn("flex flex-col gap-[24px]", "mt-[15px]")}>
             <Typography
               as="h2"
               variant="h2"
@@ -32,29 +32,34 @@ export default function AboutTheAuthor() {
           </div>
           <Typography
             as="p"
-            className={cn("text-octonary pr-7", "mt-[33]")}
+            className={cn(
+              "text-octonary tracking-[0.038px] pr-[38px] leading-[34px]",
+              "mt-[34px]"
+            )}
             variant="body"
           >
             {data.about.desc}
           </Typography>
-          <div className="grid grid-cols-3 mt-[34px]">
+          <div className="grid grid-cols-3 mt-[33px]">
             {data.about.stats.map((s, idx) => (
               <div
                 key={idx}
                 className={`flex flex-col ${
-                  idx < 2 ? "pl-3 border-r-2 border-primary" : "pl-3"
-                } ${idx > 0 ? "ml-[25px]" : ""}`}
+                  idx < 1
+                    ? "w-fit pr-[35px] pl-3  border-r border-primary"
+                    : "pl-[18px]"
+                } ${idx > 1 ? "pl-[22px]" : ""}`}
               >
                 <span className="font-family-cardo text-secondary text-size-54 leading-77 tracking-0">
                   {s.value}
                 </span>
-                <p className="font-family-inter text-octonary text-size-17 leading-21-6 mt-px">
+                <p className="font-family-inter text-octonary text-size-17 leading-21-6">
                   {s.label}
                 </p>
               </div>
             ))}
           </div>
-          <div className="flex mt-[55px] gap-10 py-[15px] px-5 bg-secondary">
+          <div className="flex mt-[55px] gap-10 py-[15px] pb-4 px-5 pr-[25px] bg-secondary w-fit">
             <div>
               <Image
                 src="/images/AboutTheAuthor/image-qr.png"
@@ -70,20 +75,20 @@ export default function AboutTheAuthor() {
               <Typography as="h3" variant="titleSm" color="primary">
                 {data.about.contact.name}
               </Typography>
-              <p className="font-family-inter text-quinary text-size-18 leading-28-5 tracking-0 mt-2.5">
-                Mail:{" "}
+              <p className="font-family-inter text-quinary text-size-18 leading-28-5 tracking-0 mt-2.5 pt-px">
+                <span className="pr-[10px]">Mail:</span>
                 <a
                   href={`mailto:${data.about.contact.email}`}
-                  className="no-underline text-inherit"
+                  className="no-underline text-inherit tracking-[0.1px]"
                 >
                   {data.about.contact.email}
                 </a>
               </p>
-              <p className="font-family-inter text-quinary text-size-18 leading-28-5 tracking-0">
-                Phone:{" "}
+              <p className="font-family-inter text-quinary text-size-18 leading-28-5 tracking-0 mt-[5px]">
+                <span className="pr-[13px]">Phone:</span>
                 <a
                   href={`tel:+21235459000`}
-                  className="no-underline text-inherit"
+                  className="no-underline text-inherit tracking-[0.25px]"
                 >
                   {data.about.contact.phone}
                 </a>
