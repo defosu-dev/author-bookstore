@@ -78,6 +78,7 @@ export default function HeaderBar() {
                     <Link
                       href="/"
                       aria-current={idx === 0 ? "page" : undefined}
+                      key={idx+label}
                     >
                       {label}
                     </Link>
