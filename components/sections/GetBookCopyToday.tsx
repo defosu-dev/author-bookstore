@@ -11,7 +11,7 @@ export default function GetBookCopyToday() {
     <section className="px-4 bg-secondary">
       <div className="container mx-auto max-w-[1300px] py-[50px] md:py-[70px] flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4">
         <div className="flex w-full h-full flex-col justify-center max-w-[540px]">
-          <div className="flex flex-col gap-[23px]">
+          <div className="flex flex-col mt-1">
             <Typography
               as="h2"
               variant="h2Lg"
@@ -19,25 +19,28 @@ export default function GetBookCopyToday() {
             >
               {data.titles.getBookCopy}
             </Typography>
-            <div className="bg-primary w-[50px] h-[3px]" />
+            <div className="bg-primary w-[50px] h-[3px] mt-[25px]" />
           </div>
           <Typography
             as="p"
             variant="body"
-            className={cn("text-quinary", "mt-[27px]")}
+            className={cn("text-quinary", "mt-[28px]")}
           >
             {data.getBookCopy.desc}
           </Typography>
           <Button
+            className={cn(
+              "mt-[26px]",
+              "pt-[16px] pb-[17px] tracking-[0.02rem] px-[46px]"
+            )}
             variant="outline"
             tone="white"
-            className={cn("mt-[27px]")}
             type="button"
             role="link"
-            aria-label="Order Now"
-          >
-            {data.getBookCopy.cta}
-          </Button>
+            aria-label={data.getBookCopy.cta}
+        >
+          <span className="px-1 pr-2 tracking-0-32 ">{data.getBookCopy.cta}</span>
+        </Button>
         </div>
         <div className="w-full h-full max-w-[560px] max-h-[394px]">
           <Image
