@@ -44,7 +44,7 @@
     "trusted": "Trusted By The Best",
     "getBookCopy": "Get Book Copy Today!",
     "whatWillYouLearn": "What Will You Learn?",
-    "enhance": "Enhance knowledge & Vision",
+    "enhance": "Enhance Knowledge & Vision",
     "articles": "Articles & Resources",
     "readers": "Words From Our Readers",
     "updates": "Get The Best Updates"
@@ -137,7 +137,7 @@
     }
   ],
   "enhanceCta": {
-    "label": "Start a 15-Days Free Trail",
+    "label": "Start A 15-Days Free Trail",
     "desc": "Short description about each chapter",
     "questionPrefix": "Have any questions?",
     "contactText": "Contact us",
