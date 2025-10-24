@@ -24,16 +24,16 @@ function ArticleCard(props: {
       <div className="w-full max-h-[350px]">
         <Image src={src} alt={alt} width={420} height={350} objectFit="cover" />
       </div>
-      <div className="flex flex-col p-[30px] bg-white">
-        <Typography as="h3" variant="titleMd">
+      <div className="flex flex-col p-[30px]  pt-[26px] bg-white">
+        <Typography as="h3" variant="titleMd" className="pr-8">
           {title}
         </Typography>
-        <Typography as="p" variant="body" className="text-octonary mt-[19px]">
+        <Typography as="p" variant="body" className="text-octonary mt-[22px] leading-30-4">
           {body}
         </Typography>
         <div
           className={cn(
-            "flex items-center mt-[13px]",
+            "flex items-center mt-[6px] pr-2",
             "justify-between gap-2 sm:gap-4"
           )}
         >
@@ -43,11 +43,12 @@ function ArticleCard(props: {
             type="button"
             role="link"
             aria-label={aria}
+            className="pb-0.5 tracking-0-38"
           >
             <span>Readmore</span>
           </Button>
           <time
-            className="text-secondary text-base leading-25-5 tracking-0"
+            className="text-secondary text-base leading-25-5 tracking-0 mt-0.5"
             dateTime={dateTime}
           >
             {date}
@@ -61,8 +62,8 @@ function ArticleCard(props: {
 export default function ArticlesResources() {
   return (
     <section className="bg-novanary px-4">
-      <div className="container mx-auto max-w-[1300px] pt-[130px] pb-[150px]">
-        <div className="flex flex-col gap-[23px] items-center">
+      <div className="container mx-auto max-w-[1300px] pt-[125px] pb-[150px]">
+        <div className="flex flex-col gap-[24px] items-center">
           <Typography
             as="h2"
             variant="h2"
